@@ -152,6 +152,7 @@ func appendData(fileName:String){
     savingData(fileName:fileName)
    
 }
+
 //function to search for a product by number and return it
 func searchByNo(no:Int) ->Product?{
     for pr in products{
@@ -161,6 +162,7 @@ func searchByNo(no:Int) ->Product?{
     }
     return nil
 }
+
 //function search for a product by its no and return its index
 func getIndex(no:Int) ->Int{
     for i in 0..<products.count{
