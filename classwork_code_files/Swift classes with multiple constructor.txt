@@ -1,0 +1,205 @@
+import Foundation
+class Student {
+    var studentID: Int
+    var studentName: String
+    var age: Int
+    var average: Double
+
+//the constructor
+init (id:Int, name: String, age: Int, avg:Double){
+    self.studentID = id
+    self.studentName = name
+    self.age = age
+    self.average = avg
+}
+  
+//a method to find out if the stuent passes or failes
+    func isPass() -> Bool
+    {
+        if self.average >= 50 {
+            return true
+        }
+        else {
+            return false
+        }
+    }
+// a method to that check the age of the student, and print out can be admitted or can't be admitted upon the age
+    func admition(){
+        if self.age < 18 {
+            print ("can't be admitted")
+        }
+        else {
+            print ("can be admitted")
+        }
+    }
+// a method to print out all data of the student
+    func printStudent(){
+        print("Student ID:\(self.studentID)\nStudent Name:\(self.studentName)\nStudent Age:\(self.age)\nStudent Average:\(self.average)")
+    }
+}
+
+//start the main
+
+func searchByName(name:String) ->Int{
+    for st in studentList {
+        if st.studentName == name {
+            st.printStudent()
+            return 1
+        }
+    }
+    return 0
+}
+
+var studentList = [Student]() // we create an array of Students
+
+while(true){
+  print("Enter the student Id:")
+  let id = Int(readLine()!)!
+  print("Enther the student name:")
+  let name = readLine()!
+  print("Enter the student age:")
+  let age = Int(readLine()!)!
+  print("Enter the student average:")
+  let avg = Double(readLine()!)!
+  studentList.append(Student(id:id, name:name, age:age, avg:avg))
+  print("Press 0 to stop or any number to add more students:")
+  let more = Int(readLine()!)!
+  if more == 0 {
+      break
+  }
+}
+//print name of each student and if passes or failes 
+for st in studentList {
+    if st.isPass(){
+        print("The student \(st.studentName) is pass")
+    }
+    else {
+        print("The student \(st.studentName) is fail")
+    }
+}
+
+//print the name of the student and if adimitted or not
+for st in studentList {
+    print(st.studentName)
+    st.admition()
+}
+
+//let the user enter a student name and if found print the details
+print("Enter the name of the required student:")
+let requiredName = readLine()!
+let found = searchByName(name:requiredName)
+if found == 0 {
+    print("the required name doesn't exist")
+}
+
+
+
+the same example with multiple constructors 
+import Foundation
+class Student {
+    var studentID: Int
+    var studentName: String
+    var age: Int
+    var average: Double
+
+//the constructor
+init (id:Int, name: String, age: Int, avg:Double){
+    self.studentID = id
+    self.studentName = name
+    self.age = age
+    self.average = avg
+}
+init (id:Int, name:String){
+    self.studentID = id
+    self.studentName = name
+    self.age = 20
+    self.average = 50
+}
+  
+//a method to find out if the stuent passes or failes
+    func isPass() -> Bool
+    {
+        if self.average >= 50 {
+            return true
+        }
+        else {
+            return false
+        }
+    }
+// a method to that check the age of the student, and print out can be admitted or can't be admitted upon the age
+    func admition(){
+        if self.age < 18 {
+            print ("can't be admitted")
+        }
+        else {
+            print ("can be admitted")
+        }
+    }
+// a method to print out all data of the student
+    func printStudent(){
+        print("Student ID:\(self.studentID)\nStudent Name:\(self.studentName)\nStudent Age:\(self.age)\nStudent Average:\(self.average)")
+    }
+}
+
+//start the main
+
+func searchByName(name:String) ->Int{
+    for st in studentList {
+        if st.studentName == name {
+            st.printStudent()
+            return 1
+        }
+    }
+    return 0
+}
+
+var studentList = [Student]() // we create an array of Students
+
+while(true){
+  print("Enter the student Id:")
+  let id = Int(readLine()!)!
+  print("Enther the student name:")
+  let name = readLine()!
+  print("if you know the age and average enter 1 if not enter 0")
+  if Int(readLine()!)! == 1 {
+    print("Enter the student age:")
+    let age = Int(readLine()!)!
+    print("Enter the student average:")
+    let avg = Double(readLine()!)!
+    studentList.append(Student(id:id, name:name, age:age, avg:avg))
+  }
+  else {
+      studentList.append(Student(id:id, name:name))
+  }
+  print("Press 0 to stop or any number to add more students:")
+  let more = Int(readLine()!)!
+  if more == 0 {
+      break
+  }
+}
+//print name of each student and if passes or failes 
+for st in studentList {
+    if st.isPass(){
+        print("The student \(st.studentName) is pass")
+    }
+    else {
+        print("The student \(st.studentName) is fail")
+    }
+}
+
+//print the name of the student and if adimitted or not
+for st in studentList {
+    print(st.studentName)
+    st.admition()
+}
+
+//let the user enter a student name and if found print the details
+print("Enter the name of the required student:")
+let requiredName = readLine()!
+let found = searchByName(name:requiredName)
+if found == 0 {
+    print("the required name doesn't exist")
+}
+
+
+

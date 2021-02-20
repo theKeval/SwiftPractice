@@ -1,0 +1,20 @@
+Create a Swift program to do following:
+
+Suppose we have a collection of employees 
+Let the user enter the employee name and monthly salary for each
+And let the user choose the rank of the employee from 1 to 3
+We need to find out the net monthly salary of each as it 
+equals monthly salary - monthly tax + monthly bonus
+bonus is 10% of the monthly salary for rank 1 and 7% for rank 2 and 3% for rank 3
+tax is 24% of the monthly salary if the annual salary is 85K+
+and tax is 19% of the monthly salary if the annual salary is 65K+
+and tax is 13% of the monthly salary if the annual salary is 50K+ 
+and no tax if the annual salary less than 50K
+
+We need to let the user enter name and monthly salary of an employee
+then print out the name and the net monthly salary then ask the user
+do you have more employees? yes/no, then if yes repeat if no stop
+
+Try to use functions as needed and don't forget to put enough comments
+
+

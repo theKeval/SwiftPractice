@@ -1,0 +1,21 @@
+Suppose we have products and for each products we have name, price, stock
+Create 2 dictionaries 
+name:price
+name:stock
+
+We need to fill the data then
+ask the user to enter the name and the quantity of required product 
+Then check if the product is exist and if the required quantity is available
+if the product is not exist show a message
+if the products is exist but the stock not enough show a message says the product is available but we have only ..stock... do you want another quantity?
+
+Put in regards that if the required quantity is 10+ to give a 5% discount for the products. 
+
+
+Example :
+Prices: Gloves:7.5, Mask:13, Sanitizer:9.6
+
+Stock: Gloves:20, Mask:100, Sanitizer:15 
+
+Finally you have to print out the total amount.
+Let the user buy as many products as they want

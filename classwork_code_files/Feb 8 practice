@@ -1,0 +1,28 @@
+Create 2 empty arrays
+first array of products name and the second of products prices
+Let the user enter as many as they want of products to fill both arrays
+
+Then let the user enter a product name
+search if it's found then show its price, or a message says it doesn't exist
+if the product is found and show its price then ask the user to enter the required quantity to buy.
+Then find the total and add 13% for tax then ask the user if wants to buy more products.
+If yes repeat and add the total to grand total. 
+if the user doesn't want to buy any more products then show the grand total and stop.
+
+create a function for reading and filling the both arrays
+func fillData(names :[String], prices: [Double])
+{
+ ........ you have to find how to stop reading and filling
+}
+
+create a function to get the name of the product and return its price or -1 if not exist
+func getPrice(name: String) -> Double
+{
+ .........
+}
+
+var granTotal = 0.0
+
+suppose the price is 17.5 and the quantity is 3
+total = 17.5 * 3 * 1.13
+grandTotal += total

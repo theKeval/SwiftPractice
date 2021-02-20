@@ -1,0 +1,15 @@
+Create a class Product with following attributes:
+no, name, price, stock
+then create a constructor (initializer)
+a method getDiscount which returns the discount as follows:
+10% if the price is 100+
+5% if the price is 70+
+and zero if less than 70
+
+a method to receive a required quantity and check if sufficient stock, so it return true or false
+
+a method to print out all details of product 
+
+in the main:
+create an array of products and let the user enter the data, then let the user enter a product name check if its found as the user to enter the required quantity and check if the stock is sufficient then calculate the total of this product with discount.
+Let the user be able to buy as many products as they want and find the grand total and print it out at the end

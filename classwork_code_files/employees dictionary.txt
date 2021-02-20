@@ -1,0 +1,20 @@
+Suppose we have list of employees, we have the employee name and salary
+let the user enter their data and fill it in a dictionary then do following:
+1. Find and print the name of the employee who has the highest salary
+2. Find and print the name and salary of the employee who gets the lowest salary
+3. Enter an employee name and print out his/her salary and names of employees who are having a similar salary, but if the employee not found, print a messages says that, or if no employees have the same salary print a message says that
+4. Let the user enter an employee name, if found then find and print out the amount of tax which is 15% of the salary for salaries less than 5000 and 20% for others.
+5. Find and print the average of all salaries
+
+at the beginning of the program show a menu to the user including all the 5 requirements
+so the user can choose any of them or 0 to exit
+
+The menu:
+0. Exit
+1. The employee of the highest salary
+2. The employee name and salary of lowest salary
+3. Employees of similar salary of given name
+4. Tax for a given employee
+5. Average of all salaries
+
+Choose your option:

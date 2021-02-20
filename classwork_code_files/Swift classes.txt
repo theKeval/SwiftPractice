@@ -1,0 +1,66 @@
+The student Class
+
+
+import Foundation
+class Student {
+    var studentID: Int
+    var studentName: String
+    var age: Int
+    var average: Double
+
+//the constructor
+init (id:Int, name: String, age: Int, avg:Double){
+    self.studentID = id
+    self.studentName = name
+    self.age = age
+    self.average = avg
+}
+  
+//a method to find out if the stuent passes or failes
+    func isPass() -> Bool
+    {
+        if self.average >= 50 {
+            return true
+        }
+        else {
+            return false
+        }
+    }
+// a method to that check the age of the student, and print out can be admitted or can't be admitted upon the age
+    func admition(){
+        if self.age < 18 {
+            print ("can't be admitted")
+        }
+        else {
+            print ("can be admitted")
+        }
+    }
+// a method to print out all data of the student
+    func printStudent(){
+        print("Student ID:\(self.studentID)\nStudent Name:\(self.studentName)\nStudent Age:\(self.age)\nStudent Average:\(self.average)")
+    }
+}
+
+
+
+The main class:
+
+
+import Foundation
+
+var studentObj: Student
+print("Enter the student Id:")
+let id = Int(readLine()!)!
+print("Enther the student name:")
+let name = readLine()!
+print("Enter the student age:")
+let age = Int(readLine()!)!
+print("Enter the student average:")
+let avg = Double(readLine()!)!
+studentObj = Student(id:id, name:name, age:age, avg:avg)
+if studentObj.isPass() {
+    print("The student pass")
+}
+else {
+    print("The student fails")
+}
