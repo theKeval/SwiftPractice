@@ -69,10 +69,10 @@ if let url = NSURL(string: _onlineFileUrl) {
     }
 }
 
-// var stringData: String = ""
-// getDataFromUser()
+var stringData: String = ""
+getDataFromUser()
 
-// writeToFile(stringData: stringData)
+writeToFile(stringData: stringData)
 
-// readDataFromFile()
+readDataFromFile()
 

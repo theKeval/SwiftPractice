@@ -1,3 +1,4 @@
+/*
 Suppose we have list of employees, we have the employee name and salary
 let the user enter their data and fill it in a dictionary then do following:
 1. Find and print the name of the employee who has the highest salary
@@ -19,7 +20,7 @@ The menu:
 
 Choose your option:
 
-
+*/
 
 
 import Foundation

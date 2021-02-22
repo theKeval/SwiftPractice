@@ -1,3 +1,4 @@
+/*
 Suppose we have products and for each products we have name, price, stock
 Create 2 dictionaries 
 name:price
@@ -20,6 +21,7 @@ Stock: Gloves:20, Mask:100, Sanitizer:15
 Finally you have to print out the total amount.
 Let the user buy as many products as they want
 
+*/
 
 import Foundation
 
