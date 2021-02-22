@@ -205,7 +205,7 @@ repeat{
         readingFromLocalFile(fileName: fileName)
     case 5: print("Enter the product no:")
         let no = Int(readLine()!)!
-        print(searchByNo(no: no)?.printProduct())
+        print(searchByNo(no: no)?.printProduct() ?? "")
         print("Do you want to change any valus of this product?y/n")
         if readLine()! == "y"{
            modifyProduct(no: no)

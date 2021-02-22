@@ -13,7 +13,7 @@ fruit += ["water melon","apricot"]
 print(fruit)
 
 //find and print the index of the oragne in the array
-for var i in 0..<fruit.count{
+for i in 0..<fruit.count{
     if fruit[i] == "orange"{
         print ("the index of oragne = \(i)")
     }

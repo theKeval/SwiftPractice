@@ -20,4 +20,12 @@ class InventoryModel {
         self.pStock = stock
     }
     
+    func toString() -> String {
+        return String(pId) + pName + String(pPrice) + String(pStock) + "\n"
+    }
+    
+    func printObj() {
+        print("pId: \(String(pId)), pName: \(pName), pPrice: \(String(pPrice)), pStock: \(String(pStock))")
+    }
+    
 }

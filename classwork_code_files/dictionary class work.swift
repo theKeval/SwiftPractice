@@ -1,5 +1,5 @@
 
-The products example with dictionary
+// The products example with dictionary
 
 import Foundation
 
