@@ -34,7 +34,7 @@ func getDataFromUser() {
         print("enter the stock: ")
         let pStock = Int(readLine()!)!
 
-        // stringData += "\n" + String(pCode) + ", " + pName + ", " + String(pPrice) + ", " + String(pStock)
+        stringData += "\n" + String(pCode) + ", " + pName + ", " + String(pPrice) + ", " + String(pStock)
 
         print("press 0 to exit OR any other number to add more data")
         if Int(readLine()!)! == 0 {
